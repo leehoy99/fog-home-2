@@ -5,7 +5,7 @@ const BagItem = () => {
         <Fragment>
             <div className="bag-item">
                 <div className="img-box">
-                    <img src="Images/bag-img.webp" alt='/' />
+                    <img src="/Images/bag-img.webp" alt='/' />
                 </div>
                 <div className="info">
                     <p className="item-name">Baseball Tee</p>

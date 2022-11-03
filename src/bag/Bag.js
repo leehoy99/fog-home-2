@@ -33,7 +33,7 @@ function Bag(props) {
                 </div>
                 <div className="package-protection-box">
                 <div className="package-protection-icon">
-                    <img src="Images/package-protection-logo.svg" alt='/' />
+                    <img src="/Images/package-protection-logo.svg" alt='/' />
                 </div>
                 <div className="package-protection-paragraph">
                     <p className="package-protection-title">Package Protection</p>
