@@ -19,7 +19,7 @@ function Shop() {
 
     useEffect(() => {
         const fetchItemData = async () => {
-            const res = await fetch('https://dummyjson.com/products');
+            const res = await fetch("https://fakestoreapi.com/products");
             const json = await res.json();
             // if(json !== null){
             //     setItem(json.products)
@@ -31,9 +31,25 @@ function Shop() {
             //         id: itemData.id,
             //         titel: itemData.title
             //     }
-            const transformedItem = await json.products;
+            const transformedItem = await json;
             setItem(transformedItem)
         }
+        // const fetchItemData = async () => {
+        //     const res = await fetch('https://dummyjson.com/products');
+        //     const json = await res.json();
+        //     // if(json !== null){
+        //     //     setItem(json.products)
+        //     // } else {
+        //     //     console.log('no data')
+        //     // }
+        //     // const transformedItem = await json.products.map((itemData) => {
+        //     //     return {
+        //     //         id: itemData.id,
+        //     //         titel: itemData.title
+        //     //     }
+        //     const transformedItem = await json.products;
+        //     setItem(transformedItem)
+        // }
         fetchItemData();
     },[])
 

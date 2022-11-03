@@ -6,7 +6,7 @@ function Item(props) {
     <Fragment>
       <div className="item">
       <div className="img-box">
-          <Link to="/shop/detail"><img src={props.images} alt='/' /></Link>
+          <Link to="/shop/detail"><img src={props.image} alt='/' /></Link>
       </div>
       <div className="paragraph-box">
           <Link to="/shop/detail">
